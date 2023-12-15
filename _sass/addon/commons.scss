@@ -26,6 +26,7 @@ html {
   }
 
   font-size: 16px;
+  word-break: keep-all;
 }
 
 body {
@@ -818,7 +819,7 @@ $btn-mb: 0.5rem;
 
   .sidebar-bottom {
     padding-left: 2rem;
-    padding-right: 1rem;
+    padding-right: 2rem;
     margin-bottom: 1.5rem;
 
     $btn-size: 1.75rem;
