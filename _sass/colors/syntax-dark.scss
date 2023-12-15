@@ -4,16 +4,16 @@
 
 @mixin dark-syntax {
   --language-border-color: #2d2d2d;
-  --highlight-bg-color: #151515;
-  --highlighter-rouge-color: #c9def1;
+  --highlight-bg-color: #282a36;
+  --highlighter-rouge-color: #ffffff;
   --highlight-lineno-color: #808080;
-  --inline-code-bg: #323238;
-  --code-color: #b0b0b0;
-  --code-header-text-color: #6a6a6a;
-  --code-header-muted-color: #353535;
-  --code-header-icon-color: #565656;
+  --inline-code-bg: rgba(255, 255, 255, 0.1);
+  --code-color: #f8f8f2;
+  --code-header-text-color: #606a8b;
+  --code-header-muted-color: #606a8b;
+  --code-header-icon-color: #606a8b;
   --clipboard-checked-color: #2bcc2b;
-  --filepath-text-color: #cacaca;
+  --filepath-text-color: #606a8b;
 
   .highlight .gp {
     color: #87939d;
@@ -29,7 +29,6 @@
     margin: 0;
   }
 
-  .highlight,
   .highlight .w {
     color: #d0d0d0;
     background-color: #151515;
@@ -47,7 +46,7 @@
   .highlight .cpf,
   .highlight .c1,
   .highlight .cs {
-    color: #848484;
+    color: #6272a4;
   }
 
   .highlight .cp {
@@ -55,17 +54,7 @@
   }
 
   .highlight .nt {
-    color: #f4bf75;
-  }
-
-  .highlight .o,
-  .highlight .ow {
-    color: #d0d0d0;
-  }
-
-  .highlight .p,
-  .highlight .pi {
-    color: #d0d0d0;
+    color: #ff79c6;
   }
 
   .highlight .gi {
@@ -84,23 +73,25 @@
   }
 
   .highlight .k,
-  .highlight .kn,
-  .highlight .kp,
-  .highlight .kr,
-  .highlight .kv {
-    color: #aa759f;
+  .highlight .kd,
+  .highlight .kc,
+  .highlight .kr {
+    color: #bd93f9;
+    font-style: italic;
   }
 
-  .highlight .kc {
-    color: #d28445;
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kv {
+    color: #bd93f9;
   }
 
   .highlight .kt {
     color: #d28445;
   }
 
-  .highlight .kd {
-    color: #d28445;
+  .highlight .nf {
+    color: #50fa7b;
   }
 
   .highlight .s,
@@ -112,7 +103,7 @@
   .highlight .sh,
   .highlight .sx,
   .highlight .s1 {
-    color: #90a959;
+    color: #ff79c6;
   }
 
   .highlight .sa {
@@ -135,27 +126,8 @@
     color: #f4bf75;
   }
 
-  .highlight .nc {
-    color: #f4bf75;
-  }
-
   .highlight .no {
     color: #f4bf75;
-  }
-
-  .highlight .na {
-    color: #6a9fb5;
-  }
-
-  .highlight .m,
-  .highlight .mb,
-  .highlight .mf,
-  .highlight .mh,
-  .highlight .mi,
-  .highlight .il,
-  .highlight .mo,
-  .highlight .mx {
-    color: #90a959;
   }
 
   .highlight .ss {
