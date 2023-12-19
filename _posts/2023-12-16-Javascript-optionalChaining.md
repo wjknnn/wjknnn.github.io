@@ -1,5 +1,5 @@
 ---
-title: Optional chaining
+title: [Javascript] Optional chaining
 author: wjknnn
 date: 2023-12-16 23:35:00 +0900
 categories: [Language, Javascript]
