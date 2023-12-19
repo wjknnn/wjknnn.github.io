@@ -1,5 +1,5 @@
 ---
-title: [Javascript] Optional chaining
+title: "[Javascript] Optional chaining"
 author: wjknnn
 date: 2023-12-16 23:35:00 +0900
 categories: [Language, Javascript]
@@ -70,14 +70,14 @@ console.log(user?.address?.street);
 AND 연산자를 사용했을 때보다 더 짧은 코드로 평가할 수 있게 되었다.
 
 > 옵셔널 체이닝을 남용해서는 안된다.
-꼭 있어야 하는데 없는 경우에 ?. 을 사용하면 디버깅이 어려워지니, 지양하도록 하자.
-그러니 꼭 존재하지 않아도 괜찮은 대상에만 사용하는 것이 바람직한 방법이다.
-{: .prompt-warning }
+> 꼭 있어야 하는데 없는 경우에 ?. 을 사용하면 디버깅이 어려워지니, 지양하도록 하자.
+> 그러니 꼭 존재하지 않아도 괜찮은 대상에만 사용하는 것이 바람직한 방법이다.
+> {: .prompt-warning }
 
 > ?. 앞의 변수는 꼭 선언되어 있어야 한다.
-user?.address를 사용하려면 let이나 const로 user를 정의 해줘야 한다.
-이렇게 옵셔널 체이닝은 선언이 완료된 변수를 대상으로만 작동한다.
-{: .prompt-warning }
+> user?.address를 사용하려면 let이나 const로 user를 정의 해줘야 한다.
+> 이렇게 옵셔널 체이닝은 선언이 완료된 변수를 대상으로만 작동한다.
+> {: .prompt-warning }
 
 `?.` 은 왼쪽 평가 대상에 값이 없으면 즉시 평가를 멈춘다.
 이런 평가 방법을 단락 평가라고 한다.
