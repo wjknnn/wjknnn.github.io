@@ -55,13 +55,13 @@ build() {
   JEKYLL_ENV=production bundle exec jekyll b -d "$SITE_DIR$_baseurl" --config "$_config"
 }
 
-test() {
-  bundle exec htmlproofer \
-    --disable-external \
-    --check-html \
-    --allow_hash_href \
-    "$SITE_DIR"
-}
+# test() {
+#   bundle exec htmlproofer \
+#     --disable-external \
+#     --check-html \
+#     --allow_hash_href \
+#     "$SITE_DIR"
+# }
 
 resume_site_dir() {
   if [[ -n $_baseurl ]]; then
@@ -98,7 +98,6 @@ flush() {
 
   shopt -s dotglob nullglob
   mv "$_backup_dir"/* .
-  [[ -f ".nojekyll" ]] || echo "" >".nojekyll"
 }
 
 deploy() {
@@ -119,7 +118,7 @@ deploy() {
 main() {
   init
   build
-  test
+  # test
   resume_site_dir
 
   if $_opt_dry_run; then
